@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7DECF8A61DC136F500774C1C /* BudgetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DECF8A51DC136F500774C1C /* BudgetTableViewController.swift */; };
+		7DECF8A81DC1375900774C1C /* BudgetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DECF8A71DC1375900774C1C /* BudgetTableViewCell.swift */; };
 		D040EEEC1DBEA7FD009D9336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D040EEEB1DBEA7FD009D9336 /* AppDelegate.swift */; };
-		D040EEEE1DBEA7FD009D9336 /* BudgetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D040EEED1DBEA7FD009D9336 /* BudgetsViewController.swift */; };
 		D040EEF01DBEA7FD009D9336 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D040EEEF1DBEA7FD009D9336 /* TransactionsViewController.swift */; };
 		D040EEF31DBEA7FD009D9336 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D040EEF11DBEA7FD009D9336 /* Main.storyboard */; };
 		D040EEF51DBEA7FD009D9336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D040EEF41DBEA7FD009D9336 /* Assets.xcassets */; };
@@ -18,9 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7DECF8A51DC136F500774C1C /* BudgetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetTableViewController.swift; sourceTree = "<group>"; };
+		7DECF8A71DC1375900774C1C /* BudgetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetTableViewCell.swift; sourceTree = "<group>"; };
 		D040EEE81DBEA7FD009D9336 /* BudgetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BudgetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D040EEEB1DBEA7FD009D9336 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D040EEED1DBEA7FD009D9336 /* BudgetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetsViewController.swift; sourceTree = "<group>"; };
 		D040EEEF1DBEA7FD009D9336 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
 		D040EEF21DBEA7FD009D9336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D040EEF41DBEA7FD009D9336 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				D040EEEB1DBEA7FD009D9336 /* AppDelegate.swift */,
-				D040EEED1DBEA7FD009D9336 /* BudgetsViewController.swift */,
 				D040EF011DC10EA3009D9336 /* Budget.swift */,
 				D040EEEF1DBEA7FD009D9336 /* TransactionsViewController.swift */,
 				D040EEFF1DC10B6D009D9336 /* BreakdownViewController.swift */,
@@ -69,6 +70,8 @@
 				D040EEF41DBEA7FD009D9336 /* Assets.xcassets */,
 				D040EEF61DBEA7FD009D9336 /* LaunchScreen.storyboard */,
 				D040EEF91DBEA7FD009D9336 /* Info.plist */,
+				7DECF8A51DC136F500774C1C /* BudgetTableViewController.swift */,
+				7DECF8A71DC1375900774C1C /* BudgetTableViewCell.swift */,
 			);
 			path = BudgetApp;
 			sourceTree = "<group>";
@@ -145,11 +148,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DECF8A61DC136F500774C1C /* BudgetTableViewController.swift in Sources */,
 				D040EEF01DBEA7FD009D9336 /* TransactionsViewController.swift in Sources */,
+				7DECF8A81DC1375900774C1C /* BudgetTableViewCell.swift in Sources */,
 				D040EF001DC10B6D009D9336 /* BreakdownViewController.swift in Sources */,
 				D040EF021DC10EA3009D9336 /* Budget.swift in Sources */,
 				D040EEEC1DBEA7FD009D9336 /* AppDelegate.swift in Sources */,
-				D040EEEE1DBEA7FD009D9336 /* BudgetsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +313,7 @@
 				D040EEFE1DBEA7FD009D9336 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

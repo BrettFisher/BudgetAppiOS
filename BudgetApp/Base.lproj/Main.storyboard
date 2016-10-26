@@ -7,23 +7,33 @@
     </dependencies>
     <scenes>
         <!--Budgets-->
-        <scene sceneID="hNz-n2-bh7">
+        <scene sceneID="rbR-zF-EYS">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="BudgetsViewController" customModule="BudgetApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
-                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                <tableViewController id="EeZ-TF-k1F" customClass="BudgetTableViewController" customModule="BudgetApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="lQt-bn-C8s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Budgets" image="budgets_icon" id="acW-dT-cKf"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="AvC-KI-3Ck" customClass="BudgetTableViewCell" customModule="BudgetApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AvC-KI-3Ck" id="6Ji-0n-cOr">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="EeZ-TF-k1F" id="fUl-RZ-Ewe"/>
+                            <outlet property="delegate" destination="EeZ-TF-k1F" id="lMn-S9-ljK"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Budgets" image="budgets_icon" selectedImage="budgets_icon" id="cZj-1E-ezJ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vgA-Rt-mq0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="879" y="-761"/>
+            <point key="canvasLocation" x="878" y="-682"/>
         </scene>
         <!--Transactions-->
         <scene sceneID="wg7-f3-ORb">
@@ -122,7 +132,7 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="EeZ-TF-k1F" kind="relationship" relationship="viewControllers" id="tvT-IC-Ogi"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="Vs8-H7-xQC" kind="relationship" relationship="viewControllers" id="HQb-Hx-6UY"/>
                     </connections>
