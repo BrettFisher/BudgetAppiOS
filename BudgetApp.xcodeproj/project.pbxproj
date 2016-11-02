@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7DC513891DC7CB220031EBBE /* AddBudgetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC513881DC7CB220031EBBE /* AddBudgetTableViewController.swift */; };
 		7DECF8A61DC136F500774C1C /* BudgetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DECF8A51DC136F500774C1C /* BudgetTableViewController.swift */; };
 		7DECF8A81DC1375900774C1C /* BudgetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DECF8A71DC1375900774C1C /* BudgetTableViewCell.swift */; };
 		D040EEEC1DBEA7FD009D9336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D040EEEB1DBEA7FD009D9336 /* AppDelegate.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7DC513881DC7CB220031EBBE /* AddBudgetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBudgetTableViewController.swift; sourceTree = "<group>"; };
 		7DECF8A51DC136F500774C1C /* BudgetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetTableViewController.swift; sourceTree = "<group>"; };
 		7DECF8A71DC1375900774C1C /* BudgetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetTableViewCell.swift; sourceTree = "<group>"; };
 		D040EEE81DBEA7FD009D9336 /* BudgetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BudgetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +74,7 @@
 				D040EEF91DBEA7FD009D9336 /* Info.plist */,
 				7DECF8A51DC136F500774C1C /* BudgetTableViewController.swift */,
 				7DECF8A71DC1375900774C1C /* BudgetTableViewCell.swift */,
+				7DC513881DC7CB220031EBBE /* AddBudgetTableViewController.swift */,
 			);
 			path = BudgetApp;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				D040EEF01DBEA7FD009D9336 /* TransactionsViewController.swift in Sources */,
 				7DECF8A81DC1375900774C1C /* BudgetTableViewCell.swift in Sources */,
 				D040EF001DC10B6D009D9336 /* BreakdownViewController.swift in Sources */,
+				7DC513891DC7CB220031EBBE /* AddBudgetTableViewController.swift in Sources */,
 				D040EF021DC10EA3009D9336 /* Budget.swift in Sources */,
 				D040EEEC1DBEA7FD009D9336 /* AppDelegate.swift in Sources */,
 			);
