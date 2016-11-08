@@ -92,5 +92,7 @@ class AddBudgetTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func Cancel(_ sender: Any) {
+    }
 
 }
