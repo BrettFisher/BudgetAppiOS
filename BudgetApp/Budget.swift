@@ -11,17 +11,7 @@ import UIKit
 class Budget {
     // MARK: Properties
     
-    var name: String
-    var amount: Double
+    var name: String = ""
+    var amount: Double = 0.0
     
-    init?(name: String, amount: Double)
-    {
-        self.name = name
-        self.amount = amount
-        
-        if name.isEmpty
-        {
-            return nil
-        }
-    }
 }
