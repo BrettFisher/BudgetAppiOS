@@ -9,8 +9,6 @@
 import UIKit
 
 class AddBudgetTableViewController: UITableViewController {
-
-    let sectionTitles: [String] = ["Budget Name", "Budget Amount"];
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,12 +29,12 @@ class AddBudgetTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return sectionTitles.count;
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 2
     }
     
 
