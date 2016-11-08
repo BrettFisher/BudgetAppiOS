@@ -40,8 +40,13 @@ class BudgetTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BudgetItem", for: indexPath)
-
+        cell.selectionStyle = UITableViewCellSelectionStyle.none
         return cell
+    }
+    
+    @IBAction func addBudget()
+    {
+        //let budget = Budget(name: "Test", amount: 10)
     }
 
     /*
