@@ -1,9 +1,20 @@
-//
-//  Transaction.swift
-//  BudgetApp
-//
-//  Created by Brian West on 11/7/16.
-//  Copyright © 2016 FishWare. All rights reserved.
-//
 
-import Foundation
+import UIKit
+
+class Transaction {
+    var title: String
+    var amount: Int
+    var description: String
+    
+    init(title: String, amount: Int) {
+        self.title = title
+        self.amount = amount
+        self.description = "No description."
+    }
+    
+    init(title: String, amount: Int, description: String) {
+        self.title = title
+        self.amount = amount
+        self.description = description
+    }
+}

@@ -10,6 +10,7 @@
 		7DC513891DC7CB220031EBBE /* AddBudgetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC513881DC7CB220031EBBE /* AddBudgetTableViewController.swift */; };
 		7DECF8A61DC136F500774C1C /* BudgetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DECF8A51DC136F500774C1C /* BudgetTableViewController.swift */; };
 		7DECF8A81DC1375900774C1C /* BudgetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DECF8A71DC1375900774C1C /* BudgetTableViewCell.swift */; };
+		7DF7892C1DD1684500C7E6A7 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF7892B1DD1684500C7E6A7 /* Transaction.swift */; };
 		D040EEEC1DBEA7FD009D9336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D040EEEB1DBEA7FD009D9336 /* AppDelegate.swift */; };
 		D040EEF01DBEA7FD009D9336 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D040EEEF1DBEA7FD009D9336 /* TransactionsViewController.swift */; };
 		D040EEF31DBEA7FD009D9336 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D040EEF11DBEA7FD009D9336 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		7DC513881DC7CB220031EBBE /* AddBudgetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBudgetTableViewController.swift; sourceTree = "<group>"; };
 		7DECF8A51DC136F500774C1C /* BudgetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetTableViewController.swift; sourceTree = "<group>"; };
 		7DECF8A71DC1375900774C1C /* BudgetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetTableViewCell.swift; sourceTree = "<group>"; };
+		7DF7892B1DD1684500C7E6A7 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		D040EEE81DBEA7FD009D9336 /* BudgetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BudgetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D040EEEB1DBEA7FD009D9336 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D040EEEF1DBEA7FD009D9336 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				7DECF8A51DC136F500774C1C /* BudgetTableViewController.swift */,
 				7DECF8A71DC1375900774C1C /* BudgetTableViewCell.swift */,
 				7DC513881DC7CB220031EBBE /* AddBudgetTableViewController.swift */,
+				7DF7892B1DD1684500C7E6A7 /* Transaction.swift */,
 			);
 			path = BudgetApp;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			files = (
 				7DECF8A61DC136F500774C1C /* BudgetTableViewController.swift in Sources */,
 				D040EEF01DBEA7FD009D9336 /* TransactionsViewController.swift in Sources */,
+				7DF7892C1DD1684500C7E6A7 /* Transaction.swift in Sources */,
 				7DECF8A81DC1375900774C1C /* BudgetTableViewCell.swift in Sources */,
 				D040EF001DC10B6D009D9336 /* BreakdownViewController.swift in Sources */,
 				7DC513891DC7CB220031EBBE /* AddBudgetTableViewController.swift in Sources */,

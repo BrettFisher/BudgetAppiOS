@@ -9,7 +9,7 @@
 import UIKit
 
 class BudgetTableViewController: UITableViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -43,7 +43,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="BMF-XC-avd">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="S2C-mL-VOE">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="S2C-mL-VOE">
                             <connections>
                                 <segue destination="8tV-wK-0ou" kind="presentation" id="LQg-rQ-8Ur"/>
                             </connections>
@@ -63,7 +63,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ycI-NR-2fV">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddBudgetItem" id="ycI-NR-2fV">
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ycI-NR-2fV" id="Xgh-1F-q6z">
