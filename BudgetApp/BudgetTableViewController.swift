@@ -32,20 +32,33 @@ class BudgetTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return budgets.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let budget: Budget = self.budgets[indexPath.row]
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "BudgetItem", for: indexPath)
         cell.selectionStyle = UITableViewCellSelectionStyle.none
+        cell.textLabel?.text = budget.getName()
+        cell.detailTextLabel?.text = String(budget.getAmount())
         return cell
     }
-
+    
+    @IBAction func unwindToMealList(sender: UIStoryboardSegue) {
+        if let sourceViewController = sender.source as? AddBudgetTableViewController, let budget = sourceViewController.budget {
+            // Add a new budget.
+            let newIndexPath = NSIndexPath(row: budgets.count, section: 0)
+            budgets.append(budget)
+            tableView.insertRows(at: [newIndexPath as IndexPath], with: .bottom)
+        }
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

@@ -9,9 +9,21 @@
 import UIKit
 
 class Budget {
+    
     // MARK: Properties
+    private var name: String!
+    private var amount: Double!
     
-    var name: String = ""
-    var amount: Double = 0.0
+    init(name: String, amount: Double) {
+        self.name = name
+        self.amount = amount
+    }
     
+    public func getName() -> String {
+        return name
+    }
+    
+    public func getAmount() -> Double {
+        return amount
+    }
 }

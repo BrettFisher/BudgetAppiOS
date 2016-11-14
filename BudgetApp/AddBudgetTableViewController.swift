@@ -10,6 +10,13 @@ import UIKit
 
 class AddBudgetTableViewController: UITableViewController {
     
+    // MARK: Properties
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var amountTextField: UITextField!
+    
+    var budget: Budget?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,8 +44,14 @@ class AddBudgetTableViewController: UITableViewController {
         return 1
     }
     
-
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if sender as! UIBarButtonItem === saveButton {
+            let name = nameTextField.text
+            let amount = Double(amountTextField.text!)
+            budget = Budget(name: name!, amount: amount!)
+        }
+    }
+    
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
