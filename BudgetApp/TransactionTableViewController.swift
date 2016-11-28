@@ -10,19 +10,26 @@ import UIKit
 
 class TransactionTableViewController: UITableViewController {
 
-    var budget: Budget?
+    var budget: Budget!
+    var addButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(self.addTransaction))
 
-        self.navigationItem.title = "Transaction"
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: nil)
+        self.navigationItem.title = budget.getName()
+        self.navigationItem.rightBarButtonItem = addButton
     }
 
-    public func addTransaction() {}
+    public func addTransaction() {
+        let transaction = Transaction(title: "New Transaction", amount: 100)
+        budget.addTransaction(transaction: transaction)
+        
+        let row = budget.getTransactions().count - 1
+        let indexPath = IndexPath(row: row, section: 0)
+        self.tableView.insertRows(at: [indexPath], with: .automatic)
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -33,23 +40,25 @@ class TransactionTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return budget.getTransactions().count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TransactionCell", for: indexPath)
 
-        // Configure the cell...
+        let transactions = budget.getTransactions()
+        let transaction = transactions[indexPath.row]
+        
+        cell.textLabel?.text = transaction.title
+        cell.detailTextLabel?.text = String(transaction.amount)
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
