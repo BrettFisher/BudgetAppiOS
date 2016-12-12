@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D6895CE1DFF45C5009C2F73 /* AddTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6895CD1DFF45C5009C2F73 /* AddTransactionViewController.swift */; };
 		7DAAF1DA1DDA577B00F1008E /* TransactionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAAF1D91DDA577B00F1008E /* TransactionTableViewController.swift */; };
 		7DC513891DC7CB220031EBBE /* AddBudgetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC513881DC7CB220031EBBE /* AddBudgetTableViewController.swift */; };
 		7DECF8A61DC136F500774C1C /* BudgetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DECF8A51DC136F500774C1C /* BudgetTableViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D6895CD1DFF45C5009C2F73 /* AddTransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddTransactionViewController.swift; path = ../AddTransactionViewController.swift; sourceTree = "<group>"; };
 		7DAAF1D91DDA577B00F1008E /* TransactionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionTableViewController.swift; sourceTree = "<group>"; };
 		7DC513881DC7CB220031EBBE /* AddBudgetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBudgetTableViewController.swift; sourceTree = "<group>"; };
 		7DECF8A51DC136F500774C1C /* BudgetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetTableViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 		D040EEEA1DBEA7FD009D9336 /* BudgetApp */ = {
 			isa = PBXGroup;
 			children = (
+				7D6895CD1DFF45C5009C2F73 /* AddTransactionViewController.swift */,
 				D040EEEB1DBEA7FD009D9336 /* AppDelegate.swift */,
 				D040EF011DC10EA3009D9336 /* Budget.swift */,
 				D040EEEF1DBEA7FD009D9336 /* TransactionsViewController.swift */,
@@ -165,6 +168,7 @@
 				D040EF001DC10B6D009D9336 /* BreakdownViewController.swift in Sources */,
 				7DC513891DC7CB220031EBBE /* AddBudgetTableViewController.swift in Sources */,
 				D040EF021DC10EA3009D9336 /* Budget.swift in Sources */,
+				7D6895CE1DFF45C5009C2F73 /* AddTransactionViewController.swift in Sources */,
 				D040EEEC1DBEA7FD009D9336 /* AppDelegate.swift in Sources */,
 				7DAAF1DA1DDA577B00F1008E /* TransactionTableViewController.swift in Sources */,
 			);

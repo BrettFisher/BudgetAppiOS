@@ -16,19 +16,24 @@ class TransactionTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(self.addTransaction))
+        addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(self.showAddTransactionView))
 
         self.navigationItem.title = budget.getName()
         self.navigationItem.rightBarButtonItem = addButton
     }
 
-    public func addTransaction() {
-        let transaction = Transaction(title: "New Transaction", amount: 100)
+    public func addTransaction(transaction: Transaction) {
         budget.addTransaction(transaction: transaction)
         
         let row = budget.getTransactions().count - 1
         let indexPath = IndexPath(row: row, section: 0)
         self.tableView.insertRows(at: [indexPath], with: .automatic)
+    }
+    
+    public func showAddTransactionView() {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "addTransactionId") as! AddTransactionViewController
+        vc.previousViewController = self
+        self.present(vc, animated: true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
@@ -95,14 +100,10 @@ class TransactionTableViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
-    */
 
 }
