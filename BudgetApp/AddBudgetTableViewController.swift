@@ -52,6 +52,15 @@ class AddBudgetTableViewController: UITableViewController {
         }
     }
     
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        let amount = Double(amountTextField.text!)
+        if amount != nil {
+            return true
+        }
+        amountTextField.textColor = UIColor.red
+        return false
+    }
+    
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
