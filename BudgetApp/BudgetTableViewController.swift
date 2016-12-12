@@ -102,6 +102,7 @@ class BudgetTableViewController: UITableViewController {
             let previousBudget = budgets[index!.row]
             
             newScene.budget = previousBudget
+            newScene.previousViewController = self
         }
     }
 

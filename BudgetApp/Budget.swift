@@ -31,9 +31,14 @@ class Budget {
     
     public func addTransaction(transaction: Transaction) {
         transactions.append(transaction)
+        self.updateAmount(amt: transaction.amount)
     }
     
     public func getTransactions() -> [Transaction] {
         return transactions
+    }
+    
+    private func updateAmount(amt: Double) {
+        self.amount! -= amt
     }
 }

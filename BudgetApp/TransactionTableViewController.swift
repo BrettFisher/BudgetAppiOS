@@ -10,6 +10,8 @@ import UIKit
 
 class TransactionTableViewController: UITableViewController {
 
+    var previousViewController: BudgetTableViewController?
+    
     var budget: Budget!
     var addButton: UIBarButtonItem!
     
@@ -28,6 +30,8 @@ class TransactionTableViewController: UITableViewController {
         let row = budget.getTransactions().count - 1
         let indexPath = IndexPath(row: row, section: 0)
         self.tableView.insertRows(at: [indexPath], with: .automatic)
+        
+        previousViewController?.tableView.reloadData()
     }
     
     public func showAddTransactionView() {
